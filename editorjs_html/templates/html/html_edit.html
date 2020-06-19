@@ -1,0 +1,42 @@
+{% load i18n %}
+{% load l10n %}
+
+<div class="wrapper-comp-settings editor-with-buttons is-active" id="settings-tab">
+  <ul class="list-input settings-list editorjs-modal-list">
+    <li class="field comp-setting-entry is-set">
+      <div class="wrapper-comp-setting">
+        <label class="label setting-label" for="html_edit_display_name">{% trans "Content" %}</label>
+        <div class="ce-example xmodule_HtmlModule" id="html_edit_display_name" class="input setting-input">
+            <div class="ce-example__content _ce-example__content--small">
+              <div id="editorjs">
+              </div>
+            </div>
+            <div class="ce-example__output">
+              <pre class="ce-example__output-content" id="output"></pre>
+            </div>
+        </div>
+      </div>
+    </li>
+    <li class="field comp-setting-entry is-set">
+      <div class="wrapper-comp-setting">
+        <label class="label setting-label" for="html_edit_display_name">{% trans "Name" %}</label>
+        <input class="input setting-input" id="html_edit_display_name" value="{{ display_name }}" type="text">
+      </div>
+    </li>
+    
+  </ul>
+  <div class="xblock-actions" style="z-index:100000;">
+    <ul>
+      <li class="action-item">
+        <a href="#" class="button action-primary action-save">Save</a>
+      </li>
+      <li class="action-item">
+        <a href="#" class="button action-cancel">{% trans "Cancel" %}</a>
+      </li>
+    </ul>
+  </div>
+  <div id="source_text" style="display: none;">
+    {{source_text}}
+  </div>
+</div>
+

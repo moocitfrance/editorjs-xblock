@@ -1,0 +1,3 @@
+[xblock.v1]
+editorjs_html = editorjs_html.html:HtmlBlock
+
