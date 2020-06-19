@@ -1,6 +1,7 @@
 # editorjs-xblock-html
 
-> Course component (Open edX XBlock) that provides an easy edit HTML component using editorjs
+> Course component (Open edX XBlock) that provides an easy edit HTML component using editorjs: https://editorjs.io/ 
+
 
 ## Copy editorjs_plugin js files
 - edx-platform/cms/static/common/js/vendor/editorjs_plugin/
